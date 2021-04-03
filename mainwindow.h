@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <uialgo1.h>
+#include <uialgo2.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -21,7 +22,10 @@ private slots:
 
     void on_bubbleSort_released();
 
+    void on_greenFilter_released();
+
 private:
     Ui::MainWindow *ui;
+
 };
 #endif // MAINWINDOW_H
