@@ -54,7 +54,7 @@ void uiAlgo2::on_butt_OpenFile_released()
 
     }
     std::cout << "he terminado " << std::endl;
-
+    tratado.escalaVerdes(paths);
 }
 
 void uiAlgo2::on_butt_DestinationFolder_released()

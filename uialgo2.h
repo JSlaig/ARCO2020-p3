@@ -3,7 +3,7 @@
 
 #include <QDialog>
 #include "vector"
-
+#include <imagenes.h>
 namespace Ui {
 class uiAlgo2;
 }
@@ -24,7 +24,7 @@ private slots:
 private:
     Ui::uiAlgo2 *ui;
     std::vector<QString> paths;
-
+    imagenes tratado;
     QString directoryFolder;
     QString destinationFolder;
 };
