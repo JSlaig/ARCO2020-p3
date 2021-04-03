@@ -8,7 +8,7 @@ class imagenes
 {
 public:
     imagenes();
-    void escalaVerdes(std::vector<QString> imagenes);
+    void escalaVerdes(std::vector<QString> imagenes,QString destinationFolderPath);
 };
 
 #endif // IMAGENES_H

@@ -39,6 +39,19 @@
     <string>Destination Folder</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="butt_Convert">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>80</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Convert</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

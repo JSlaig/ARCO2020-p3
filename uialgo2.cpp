@@ -54,14 +54,21 @@ void uiAlgo2::on_butt_OpenFile_released()
 
     }
     std::cout << "he terminado " << std::endl;
-    tratado.escalaVerdes(paths);
+
 }
 
 void uiAlgo2::on_butt_DestinationFolder_released()
 {
     destinationFolder = QFileDialog::getExistingDirectory(this,"Open a File", directoryFolder);
 
+}
+
+
+void uiAlgo2::on_butt_Convert_released()
+{
     if(destinationFolder.isEmpty()){
         destinationFolder = directoryFolder;
     }
+
+    tratado.escalaVerdes(paths,destinationFolder);
 }

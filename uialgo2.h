@@ -21,6 +21,8 @@ private slots:
 
     void on_butt_DestinationFolder_released();
 
+    void on_butt_Convert_released();
+
 private:
     Ui::uiAlgo2 *ui;
     std::vector<QString> paths;
