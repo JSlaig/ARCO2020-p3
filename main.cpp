@@ -4,9 +4,9 @@
 
 int main(int argc, char *argv[]){
     Ordenacion ordenacion;
-    ordenacion.rellenarLista();
-    ordenacion.ordenarLista();
-    ordenacion.imprimirLista();
+   // ordenacion.rellenarLista();
+    //ordenacion.ordenarLista();
+    //ordenacion.imprimirLista();
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
