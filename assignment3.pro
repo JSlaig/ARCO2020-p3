@@ -20,16 +20,20 @@ SOURCES += \
     mainwindow.cpp \
     ordenacion.cpp \
     uialgo1.cpp \
+    uialgo2.cpp 
 
 
 HEADERS += \
     mainwindow.h \
     ordenacion.h \
-    uialgo1.h
+    uialgo1.h \
+    uialgo2.h 
 
 FORMS += \
     mainwindow.ui \
-    uialgo1.ui
+    uialgo1.ui \
+    uialgo2.ui 
+    
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
