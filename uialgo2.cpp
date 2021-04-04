@@ -69,6 +69,26 @@ void uiAlgo2::on_butt_Convert_released()
     if(destinationFolder.isEmpty()){
         destinationFolder = directoryFolder;
     }
+    unsigned t0, t1;
+    double time[5];
 
-    tratado.escalaVerdes(paths,destinationFolder);
+    for(int i = 0; i < 5; i++){
+        t0 = clock();
+
+        //Llamada al algoritmo
+        tratado.escalaVerdes(paths,destinationFolder);
+
+        t1 = clock();
+
+        time[i] = (double(t1-t0)/CLOCKS_PER_SEC) * 1000;
+    }
+
+    ui->time_1->setText(QString::number((time[0])) + " ms");
+    ui->time_2->setText(QString::number((time[1])) + " ms");
+    ui->time_3->setText(QString::number((time[2])) + " ms");
+    ui->time_4->setText(QString::number((time[3])) + " ms");
+    ui->time_5->setText(QString::number((time[4])) + " ms");
+    int avg = (time[0] + time[1] + time[2] + time[3] + time[4]) / 5;
+    ui->time_average->setText(QString::number(avg) + " ms");
+
 }
