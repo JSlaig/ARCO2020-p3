@@ -9,11 +9,11 @@ Ordenacion::Ordenacion()
 
 }
 
-void Ordenacion::rellenarLista(){
+void Ordenacion::rellenarLista(std::string ruta){
 
        std::ifstream archivo;
        int numero;
-       archivo.open("Numeros.txt",std::ios::out);// FALLO EN ESTA LINEA
+       archivo.open(ruta,std::ios::out);// FALLO EN ESTA LINEA
        if (archivo.fail()){
            std::cout << "NO SE PUDO ABRIR EL ARCHIVO";
            exit(1);
@@ -48,7 +48,18 @@ void Ordenacion::ordenarLista(){
           }
 
 void Ordenacion::imprimirLista(){
-    for (int i = 0; i < Ordenacion::listaNumeros.size();i++){
+    /*for (int i = 0; i < Ordenacion::listaNumeros.size();i++){
         std::cout << Ordenacion::listaNumeros[i] << std::endl;
+    }*/
+    std::cout << Ordenacion::listaNumeros.size() << std::endl;
+}
+void Ordenacion::escribirFichero(std::string ruta){
+    std::ofstream fichero;
+    Ordenacion::ordenarLista();
+    fichero.open(ruta);
+    for (int i = 0; i < Ordenacion::listaNumeros.size(); i++){
+        fichero << Ordenacion::listaNumeros[i];
+        fichero <<" ";
     }
+    fichero.close();
 }

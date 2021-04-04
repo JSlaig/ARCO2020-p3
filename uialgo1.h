@@ -2,7 +2,7 @@
 #define UIALGO1_H
 
 #include <QDialog>
-
+#include "ordenacion.h"
 #include <ctime>
 #include <math.h>
 
@@ -17,14 +17,35 @@ class uiAlgo1 : public QDialog
 public:
     explicit uiAlgo1(QWidget *parent = nullptr);
     ~uiAlgo1();
+    int tiempoEjecucion();
 
 private slots:
-    void on_execute_released();
+
+
+    void on_Algo1butt_OpenFile_released();
+
+    void on_Algo1butt_DestinationFolder_released();
+
+    void on_pushButton_released();
+
+    void on_Executed_released();
+
+    void on_Executed_2_released();
 
     void on_reset_released();
 
+    void on_Algo1butt_OpenFile_2_released();
+
+    void on_EXECUTION_released();
+
 private:
     Ui::uiAlgo1 *ui;
+//private:
+    //Ui::uiAlgo1 *ui;
+    std::vector<QString> paths;
+    Ordenacion ordenacion;
+    QString directoryFile;
+    QString destinationFolder;
 };
 
 #endif // UIALGO1_H
