@@ -25,17 +25,7 @@ private slots:
     void on_Algo1butt_OpenFile_released();
 
     void on_Algo1butt_DestinationFolder_released();
-
-    void on_pushButton_released();
-
-    void on_Executed_released();
-
-    void on_Executed_2_released();
-
     void on_reset_released();
-
-    void on_Algo1butt_OpenFile_2_released();
-
     void on_EXECUTION_released();
 
 private:
