@@ -96,7 +96,6 @@ void uiAlgo1::on_EXECUTION_released()
     for(int i = 0; i < 5; i++){
         t0 = clock();
 
-        //Llamada al algoritmo
         ordenacion.ordenarLista();
 
         t1 = clock();
