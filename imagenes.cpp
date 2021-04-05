@@ -52,7 +52,7 @@ void imagenes::escalaVerdes(std::vector<QString> imagenes,QString destinationFol
 
      name.append(stringIterator);
      //--> "/Imagen_1
-     name.append(".png");
+     name.append(".jpg");
      //--> "/Imagen_1.png
 
      destinationFolderPathCopy.append(name);
